@@ -113,8 +113,14 @@ img {
 .attribution a {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
-    color: #d3d3d3;
+    color: #f3f3f3;
     font-weight: bold;
+    transition: color .3s ease;
+}
+
+.attribution a:hover {
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -158,8 +164,7 @@ img {
         justify-content: flex-end;
         padding: 30px;
         padding-bottom: 10px;
-        margin-right: 20px;
-        margin-bottom: 0;
+        margin: 0 20px;
     }
     .attribution {
         margin: 0;
