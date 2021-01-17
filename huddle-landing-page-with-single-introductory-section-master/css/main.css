@@ -1,0 +1,178 @@
+/* Codigo de Paul Irish para evitar errores de padding */
+
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    margin: 0;
+}
+
+header {
+    background-image: url(../images/bg-mobile.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    padding: 30px;
+}
+
+.logo {
+    margin-top: 10px;
+    max-width: 40%;
+}
+
+.imagen-central {
+    margin-top: 50px;
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20PX;
+    font-weight: 600;
+}
+
+.cuerpo {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.boton {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: hsl(257, 40%, 49%);
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 8px 50px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 3px rgba(0, 0, 0, .2);
+    transition: background-color .3s ease;
+}
+
+.boton:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.sociales {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 50px 0;
+}
+
+.sociales a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 9px;
+    margin-right: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    font-size: 12px;
+    transition: background-color .3s ease;
+}
+
+.sociales a:first-of-type {
+    padding: 8px 12px;
+}
+
+.sociales a:hover {
+    border:1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.attribution {
+    margin-bottom: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    color: #d3d3d3;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    header {        
+        background-image: unset;
+        flex: 1 1 60%;
+    }
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .contenedor {
+        display: flex;
+        align-items: center;
+        flex: 0 0 40%;        
+    }
+    .logo img {
+        max-width: 60%;
+    }
+    .titulo {
+        font-size: 40px;
+        text-align: start;
+    }
+    .cuerpo {
+        text-align: start;
+        font-size: 16px;
+    }
+    .boton {
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+    .sociales {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px;
+        padding-bottom: 10px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    .attribution {
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .caebecera {
+        margin-right: 200px;
+    }
+}
