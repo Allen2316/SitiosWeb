@@ -1,6 +1,5 @@
 <?php
 include("database.php");
-
 if (isset($_GET["buscar"])) {
     $user =$_GET["buscar"];    
 }
@@ -9,7 +8,8 @@ $sql = "SELECT * FROM usuarios WHERE user = '$user'";
 $result = mysqli_query($conexion, $sql);
 
 if (!$result) {
-    die("Error al buscar");
+    echo 1;
+    die("No hay");
 }
 
 $json = array();
