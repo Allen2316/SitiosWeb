@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <p class="navbar-brand m-0">Luis Sarmiento</p>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row justify-content-center align-items-center minh-100">
+            <div class="col-sm-6">
+                <!-- <div class="centrar"> -->
+                <div class="card py-5 align-items-center">
+                    <div class="card-body text-center col-sm-8 ">
+                        <form id="Formulario">
+                            <div class="form-group">
+                                <input type="text" id="user" name="user" class="form-control" placeholder="User">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="pass" name="pass" class="form-control"
+                                    placeholder="Contraseña">
+                            </div>
+                            <button class="btn btn-success px-4">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-sm-6">
+                <div class="table-responsive">
+                    <table class="table table-striped table-dark table-sm">
+                        <thead>
+                            <tr class="text-center">
+                                <td>Usuario</td>
+                                <td>Password</td>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpo-tabla" class="text-center mx-auto">
+                            <!-- cuerpo de tabla se llena en app.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6 text-center">
+                <div class="card ">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="text" name="buscar" id="buscar" placeholder="Buscar" class="form-control">
+                        </div>
+                        <button class="btnbuscar btn btn-primary px-5">Buscar</button>
+                        <hr class="my-4">
+                        <div id="salida" >
+                            <!-- Aqui se mostrara la salida -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper-core-1.16.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
