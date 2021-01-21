@@ -1,0 +1,146 @@
+/* Codigo de Paul Irish para evitar errores de padding */
+
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+}
+
+h1{
+    font-weight: 900;
+}
+
+
+h1 i{
+    
+    transform: rotate(15deg);
+}
+
+/* globales */
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.site-header {
+    text-align: center;    
+}
+
+@media (min-width: 768px) {
+    .site-header{
+        padding-top: 100px;
+        font-size: 3rem;
+    }
+}
+
+/* Formulario */
+
+.formulario {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .flex {        
+        display: flex;        
+        justify-content: center;        
+    }
+    .formulario {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .formulario:last-child {
+        justify-content: center;
+    }
+}
+
+.entradas {
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+@media (min-width: 480px) {
+    .entradas {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .entradas {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+.entradas label {
+    display: block;
+    padding-bottom: 10px;      
+}
+
+@media (min-width: 480px) {
+    .entradas label {
+        display: inline;
+        padding-bottom: 0;
+        flex: 0 0 calc(30% - 1rem);
+        font-size: 2rem;  
+    }
+}
+
+.input {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;   
+    transition: background-color .5s; 
+}
+
+@media (min-width: 480px) {
+    .input {
+        flex: 0 0 calc(70% - 1rem);
+    }
+}
+
+@media (min-width: 768px) {
+    .input {
+        margin-right: 15px;
+    }
+}
+
+.input:hover {
+    background-color: #d8d5d5;
+}
+
+.btn-verde {
+    margin: 10px 0;
+    padding: 10px 66px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 3px;
+    transition: background-color .5s; 
+}
+
+@media (min-width: 480px) {
+    .btn-verde {
+        padding: 10px 57px;
+    }
+}
+
+.btn-verde:hover{
+    cursor: pointer;
+    background-color: #22943d;
+}
